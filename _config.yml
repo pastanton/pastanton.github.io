@@ -39,7 +39,7 @@ show_excerpts: true
 # Theme specific
 
 minima:
-  skin: solarized
+  skin: auto
   date_format: "%A, %B %e, %Y"
   social_links:
     - { platform: github, user_url: "https://github.com/pastanton" }
