@@ -6,11 +6,12 @@ categories:
   - jekyll 
   - blog
   - bluesky
+  
 ---
 
 TLDR: If you just want to see what I did, please check out the [git commit].
 
-Hopefully this will help someone who is trying to setup Bluesky comments ona [Jekyll] blog hosted on [GitHub Pages].
+Hopefully this will help someone who is trying to setup Bluesky comments on a [Jekyll] blog hosted on [GitHub Pages].
 
 Before you begin, this will be a lot easier if you're using [Jekyll] and [Minima] hosted on [GitHub Pages]. Check out my
 previous [blog post](blog_post) for more information.
