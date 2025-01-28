@@ -8,6 +8,7 @@ categories:
   - bluesky
 bluesky_post_uri: https://bsky.app/profile/uglydata.dev/post/3lgrmuomiqc2a
 ---
+{% raw %}
 
 TLDR: If you just want to see what I did, please check out the [git commit].
 
@@ -24,13 +25,17 @@ I added a new file [`_includes/bluesky_comments.html`](bluesky_comments.html), j
 Then I pulled [`_includes/custom-head.html`](custom-head.html) and [`_layouts/post.html`](post.html) from the [Minima] repo and modified them.
 
 On the bottom of [`_layouts/post.html`](post.html), underneath the disqus comment section, I added:
+
 ```liquid
+
   {%- if page.bluesky_post_uri -%}
     {%- include bluesky_comments.html -%}
   {%- endif -%}
+  
 ```
 
 Then I added the css and react / javascript to the [`_includes/custom-head.html`](custom-head.html) file.
+
 ```liquid
 {%- if page.bluesky_post_uri and jekyll.environment == "production" -%}
 <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.8.0/dist/bluesky-comments.css">
@@ -78,9 +83,11 @@ Things I would do in the future to improve this:
 
 This was mostly thanks to the work of [Emily Liu] and [Cory Zue]. And Cory, if you're reading this, this took me more than five minutes.
 
-[Using Bluesky posts as blog comments](https://emilyliu.me/blog/comments) by [Emily Liu]
-[Adding Bluesky-powered comments to any website in five minutes](https://www.coryzue.com/writing/bluesky-comments/) by [Cory Zue]
-[Adding Bluesky comments to your Jekyll Site](https://khattamicah.xyz/portfolio/research-and-writing/writing/blogs/2024-11-25-adding-bluesky-comments/) by [Micah Alex]
+Blog posts I used for this:
+
+- [Using Bluesky posts as blog comments](https://emilyliu.me/blog/comments) by [Emily Liu]
+- [Adding Bluesky-powered comments to any website in five minutes](https://www.coryzue.com/writing/bluesky-comments/) by [Cory Zue]
+- [Adding Bluesky comments to your Jekyll Site](https://khattamicah.xyz/portfolio/research-and-writing/writing/blogs/2024-11-25-adding-bluesky-comments/) by [Micah Alex]
 
 [Emily Liu]: https://emilyliu.me/
 [Cory Zue]: https://www.coryzue.com/
@@ -97,3 +104,5 @@ This was mostly thanks to the work of [Emily Liu] and [Cory Zue]. And Cory, if y
 [blog_post]: https://github.com/pastanton/pastanton.github.io/blob/dd9165397c0ece65ad3032b501972560862d79e6/_posts/2025-01-26-creating-a-blog.markdown
 [bluesky_post]: https://bsky.app/profile/uglydata.dev/post/3lgpcc66x4c2m
 [Bluesky]: https://bsky.app/
+
+{% endraw %}
