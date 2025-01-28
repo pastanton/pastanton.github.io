@@ -5,6 +5,7 @@ date:   2025-01-26 23:45:00 -0500
 categories: 
   - jekyll 
   - blog
+bluesky_post_uri: https://bsky.app/profile/uglydata.dev/post/3lgpcc66x4c2m
 ---
 
 First post here is about the setup, since that in itself was a bit of a journey.
