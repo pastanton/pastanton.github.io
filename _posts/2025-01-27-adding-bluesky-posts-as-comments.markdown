@@ -6,7 +6,7 @@ categories:
   - jekyll 
   - blog
   - bluesky
-bluesky_post_uri: https://bsky.app/profile/uglydata.dev/post/3lgrmp3744s2x
+bluesky_post_uri: https://bsky.app/profile/uglydata.dev/post/3lgrmuomiqc2a
 ---
 
 TLDR: If you just want to see what I did, please check out the [git commit].
